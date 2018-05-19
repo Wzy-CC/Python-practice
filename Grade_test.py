@@ -20,3 +20,5 @@ def convert(_list):
 print('----------------------------------------------------------------')
 convert(list_student)
 print(sorted(list_student))               
+#备注：以上代码并不能模拟人的真实心理，有待完善
+#问题：for i in _list 中，i 是什么，指向什么对象？
