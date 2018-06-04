@@ -13,29 +13,30 @@
 ##    1 
 ##    1 	1
 
-##    import math
-##
-##    def find_factor(_int):
-##        list_factor = []
-##        temp = _int
-##        sqrt_int = int(math.sqrt(_int))+1
-##        for fac in range(2,sqrt_int+1):
-##            while(temp % fac == 0):
-##                list_factor.append(fac)
-##                temp = temp / fac
-##        return list_factor
-##
-##    print(find_factor(90))
+import math
 
-##    def print_triangle(_n):
-##        list_line = []
-##        for line in range(_n):
-##            list_line.append([])
-##            for col in range(line+1):
-##                if col == 0 or col == line:
-##                    list_line[line].append(1)
-##                else:
-##                    list_line[line].append(list_line[line-1][col]+list_line[line-1][col-1])
-##            print(list_line[line])
-##            
-##    print_triangle(13)        
+def find_factor(_int):
+    list_factor = []
+    temp = _int
+    sqrt_int = int(math.sqrt(_int))+1
+    for fac in range(2,sqrt_int+1):
+        while(temp % fac == 0):
+            list_factor.append(fac)
+            temp = temp / fac
+    return list_factor
+
+print(find_factor(90))
+
+def print_triangle(_n):
+    list_line = []
+    for line in range(_n):
+        list_line.append([])
+        for col in range(line+1):
+            if col == 0 or col == line:
+                list_line[line].append(1)
+            else:
+                list_line[line].append(list_line[line-1][col]+list_line[line-1][col-1])
+        print(list_line[line])
+        
+print_triangle(13)        
+
