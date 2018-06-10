@@ -40,3 +40,4 @@ class SensitiveWordFilter:
           
 wordfilter_obj = SensitiveWordFilter(f)
 print(wordfilter_obj.censor())
+f.close()
